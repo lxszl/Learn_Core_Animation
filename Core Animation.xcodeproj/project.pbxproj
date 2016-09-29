@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2315C93D1D9D3E5E00B18E8A /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2315C93C1D9D3E5E00B18E8A /* UIImage+Category.m */; };
 		232786391D9D39DE006C9EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 232786381D9D39DE006C9EF1 /* main.m */; };
 		2327863C1D9D39DE006C9EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327863B1D9D39DE006C9EF1 /* AppDelegate.m */; };
 		2327863F1D9D39DE006C9EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327863E1D9D39DE006C9EF1 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2315C93B1D9D3E5E00B18E8A /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		2315C93C1D9D3E5E00B18E8A /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
 		232786341D9D39DE006C9EF1 /* Core Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		232786381D9D39DE006C9EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2327863A1D9D39DE006C9EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		232786361D9D39DE006C9EF1 /* Core Animation */ = {
 			isa = PBXGroup;
 			children = (
+				2315C93B1D9D3E5E00B18E8A /* UIImage+Category.h */,
+				2315C93C1D9D3E5E00B18E8A /* UIImage+Category.m */,
 				2327863A1D9D39DE006C9EF1 /* AppDelegate.h */,
 				2327863B1D9D39DE006C9EF1 /* AppDelegate.m */,
 				2327863D1D9D39DE006C9EF1 /* ViewController.h */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					232786331D9D39DE006C9EF1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 65MY9X7M2K;
 					};
 					2327864C1D9D39DE006C9EF1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -273,6 +279,7 @@
 				2327863F1D9D39DE006C9EF1 /* ViewController.m in Sources */,
 				2327863C1D9D39DE006C9EF1 /* AppDelegate.m in Sources */,
 				232786391D9D39DE006C9EF1 /* main.m in Sources */,
+				2315C93D1D9D3E5E00B18E8A /* UIImage+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Core Animation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loyt.Core-Animation";
@@ -426,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Core Animation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loyt.Core-Animation";
@@ -498,6 +507,7 @@
 				232786631D9D39DE006C9EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232786641D9D39DE006C9EF1 /* Build configuration list for PBXNativeTarget "Core AnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +516,7 @@
 				232786661D9D39DE006C9EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232786671D9D39DE006C9EF1 /* Build configuration list for PBXNativeTarget "Core AnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +525,7 @@
 				232786691D9D39DE006C9EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
