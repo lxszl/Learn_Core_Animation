@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUJ-cq-6U6">
+                                <rect key="frame" x="20" y="422" width="262" height="178"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="gUK-p7-IZx"/>
+                                    <constraint firstAttribute="width" constant="262" id="ipH-9A-W5a"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEC-QX-uqL">
+                                <rect key="frame" x="360" y="472" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Og-Ea-nXO">
+                                        <rect key="frame" x="97" y="98" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="changeView4Color:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbp-dU-1Zc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4Og-Ea-nXO" secondAttribute="bottom" id="NcX-7R-D3N"/>
+                                    <constraint firstAttribute="width" constant="240" id="akp-cW-Nfu"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Og-Ea-nXO" secondAttribute="trailing" constant="97" id="dm7-Yn-GGl"/>
+                                    <constraint firstAttribute="height" constant="128" id="uZD-zM-SWs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AUJ-cq-6U6" secondAttribute="bottom" id="7O6-Fa-x6t"/>
+                            <constraint firstItem="AUJ-cq-6U6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Emx-hT-iFm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xEC-QX-uqL" secondAttribute="bottom" id="QuM-LV-Vx2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xEC-QX-uqL" secondAttribute="trailing" constant="-20" id="Sf1-v7-mnA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="AUJ-cq-6U6" id="hlY-Ky-vTP"/>
+                        <outlet property="view4" destination="xEC-QX-uqL" id="oDL-HV-RKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="136"/>
         </scene>
     </scenes>
 </document>
